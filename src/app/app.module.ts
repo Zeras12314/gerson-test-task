@@ -7,6 +7,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { NavComponent } from './components/nav/nav.component';
 import { VideosComponent } from './components/videos-list/videos.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
+import { ServerErrorComponent } from './components/server-error/server-error.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
     HomepageComponent,
     NavComponent,
     VideosComponent,
+    LoadingSpinnerComponent,
+    ServerErrorComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

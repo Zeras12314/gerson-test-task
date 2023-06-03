@@ -1,1 +1,3 @@
-<app-nav></app-nav><app-videos></app-videos>
+<app-nav *ngIf="!loading"></app-nav>
+<app-loading-spinner *ngIf="loading"></app-loading-spinner>
+<app-videos (isLoading)="onLoading($event)"></app-videos>
