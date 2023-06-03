@@ -1,0 +1,25 @@
+.server-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  text-align: center;
+}
+
+.server-error h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.server-error h2 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.server-error p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
