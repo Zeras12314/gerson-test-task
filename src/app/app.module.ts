@@ -9,6 +9,8 @@ import { VideosComponent } from './components/videos-list/videos.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { ServerErrorComponent } from './components/server-error/server-error.component';
+import { VideoDetailsComponent } from './components/video-details/video-details.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,8 +20,9 @@ import { ServerErrorComponent } from './components/server-error/server-error.com
     VideosComponent,
     LoadingSpinnerComponent,
     ServerErrorComponent,
+    VideoDetailsComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

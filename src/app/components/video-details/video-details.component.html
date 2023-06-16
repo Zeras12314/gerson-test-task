@@ -1,0 +1,30 @@
+<app-nav [isActive]="isVideoDetailsActive"></app-nav>
+
+<div class="container my-5">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <iframe
+          width="1280"
+          height="720"
+          [src]="getSafeUrl('https://www.youtube.com/embed/' + video.media_id)"
+          title='How To Fix: "null has been blocked by CORS policy" Error in JavaScript AJAX'
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <h2 class="mt-2">{{ video.name }}</h2>
+        <h4>{{ video.description }}</h4>
+
+        <div *ngFor="let tag of video.tags" class="d-inline">
+          <span class="badge text-bg-secondary mx-1">{{ tag }}</span>
+        </div>
+        <a href="{{ video.url }}" target="_blank" class="d-block mt-2"
+          >Go to youtube link</a
+        >
+        <h4 class="mt-5">Image Preview</h4>
+        <img src="{{ video.preview_image }}" alt="" />
+      </div>
+    </div>
+  </div>
+</div>

@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs/operators';
 import { Video } from '../interface/video.interface';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

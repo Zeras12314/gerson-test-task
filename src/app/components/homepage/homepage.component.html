@@ -1,3 +1,6 @@
-<app-nav></app-nav>
+<app-nav (searchTextChanged)="onSearchTextEntered($event)"></app-nav>
 <app-loading-spinner *ngIf="loading"></app-loading-spinner>
-<app-videos (isLoading)="onLoading($event)"></app-videos>
+<app-videos
+  (isLoading)="onLoading($event)"
+  [searchTextData]="searchText"
+></app-videos>
